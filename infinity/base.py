@@ -1,4 +1,5 @@
 from functools import partial, wraps
+from itertools import imap, count
 
 
 def compose(f, g):

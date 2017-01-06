@@ -1,11 +1,5 @@
 from .base import compose, bind, series
-
-
-def fact(n):
-    if n == 0 or n == 1:
-        return 1
-    return n * fact(n-1)
-
+from .util import fact, ncr
 
 def exponential(a):
     @series(a)
@@ -22,7 +16,14 @@ def sine(a):
 
 
 def cosine(a):
-    @series
+    @series(a)
     def compute(a, n):
         return (-1 ** n)*(a**(2*n))/fact(2*n)
+    return compute()
+
+
+def harmonics(a):
+    @series(a)
+    def compute(a, n):
+        return (-1**n)/n
     return compute()

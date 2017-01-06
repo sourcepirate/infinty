@@ -22,3 +22,21 @@ def GP(a, r):
     def compute(a, r, n):
         return a*(r**n)
     return compute()
+
+@series()
+def sum_linear(n):
+    if n == 0:
+        return 0
+    return (n * (n-1))/2
+
+@series()
+def sum_square(n):
+    if n == 0:
+        return 0
+    return (n * (n+1) * (2*n+1))/6
+
+@series()
+def sum_cube(n):
+    if n == 0:
+        return 0
+    return (n * (n+1))**2/4
