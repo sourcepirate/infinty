@@ -3,6 +3,7 @@ from functools import partial, wraps
 try:
     from itertools import imap, count
 except ImportError:
+    from itertools import count
     imap = map
 
 
