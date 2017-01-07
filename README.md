@@ -31,6 +31,44 @@ print(next(sofn))
 
 ```
 
+## Series out of box
+
+* arithmatic progression.  
+```python
+ from infinity import AP
+```
+* geometric progression.
+```python
+ from infinity import GP
+```
+* linear sum series (Summation of n).
+```python
+ from infinity import sum_linear
+```
+* square sum series (Summation of n2).
+```python
+ from infinity import sum_square
+```
+* cube sum series (Summation of n3).
+```python
+ from infinity import sum_cube
+```
+* sine series.
+```python
+ from infinity import sine
+```
+* cosine series.
+```python
+ from infinity import cosine
+```
+* harmonic series.
+```python
+ from infinity import harmonics
+```
+* exponential series.
+```python
+ from infinity import exponential
+ ```
 
 ## License
 
