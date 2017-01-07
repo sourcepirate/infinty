@@ -1,5 +1,9 @@
 from functools import partial, wraps
-from itertools import imap, count
+
+try:
+    from itertools import imap, count
+except ImportError:
+    imap = map
 
 
 def compose(f, g):
