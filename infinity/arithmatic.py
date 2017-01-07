@@ -1,4 +1,5 @@
 from .base import compose, bind, series
+import math
 
 
 @series()
@@ -40,3 +41,11 @@ def sum_cube(n):
     if n == 0:
         return 0
     return (n * (n+1))**2/4
+
+@series()
+def partions(n):
+    if n == 0:
+        return 0
+    kernal = 1/(4*n*math.sqrt(3))
+    degree = math.pi * math.sqrt((2*n)/3)
+    return kernal * math.exp(degree)
