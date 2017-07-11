@@ -1,10 +1,10 @@
-##INFINITE
+## INFINITE
 
 [![Build Status](https://travis-ci.org/plasmashadow/infinty.svg?branch=master)](https://travis-ci.org/plasmashadow/infinty)
 
 Bunch of infinite series and tools to generate infinite series.
 
-##Usage
+## Usage
 
 ```python
 
